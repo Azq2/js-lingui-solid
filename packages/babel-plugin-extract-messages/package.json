@@ -2,9 +2,33 @@
   "name": "@lingui-solid/babel-plugin-extract-messages",
   "version": "5.1.2",
   "description": "Babel plugin for collecting messages from source code for internationalization",
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./extractor": {
+      "require": {
+        "types": "./dist/extractor.d.ts",
+        "default": "./dist/extractor.cjs"
+      },
+      "import": {
+        "types": "./dist/extractor.d.ts",
+        "default": "./dist/extractor.mjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "author": {
     "name": "Tomáš Ehrlich",
     "email": "tomas.ehrlich@gmail.com"
@@ -45,7 +69,13 @@
     "@babel/types": "^7.20.7",
     "@lingui-solid/babel-plugin-lingui-macro": "workspace:*",
     "@lingui/jest-mocks": "workspace:*",
+    "@types/convert-source-map": "^2",
+    "convert-source-map": "2.0.0",
     "rimraf": "^6.0.1",
+    "source-map": "0.8.0-beta.0",
     "unbuild": "2.0.0"
+  },
+  "peerDependencies": {
+    "@lingui/conf": "*"
   }
 }

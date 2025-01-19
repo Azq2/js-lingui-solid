@@ -2999,8 +2999,13 @@ __metadata:
     "@babel/types": "npm:^7.20.7"
     "@lingui-solid/babel-plugin-lingui-macro": "workspace:*"
     "@lingui/jest-mocks": "workspace:*"
+    "@types/convert-source-map": "npm:^2"
+    convert-source-map: "npm:2.0.0"
     rimraf: "npm:^6.0.1"
+    source-map: "npm:0.8.0-beta.0"
     unbuild: "npm:2.0.0"
+  peerDependencies:
+    "@lingui/conf": "*"
   languageName: unknown
   linkType: soft
 
@@ -3058,6 +3063,23 @@ __metadata:
       optional: true
     babel-plugin-macros:
       optional: true
+  languageName: unknown
+  linkType: soft
+
+"@lingui-solid/vite-plugin@workspace:packages/vite-plugin":
+  version: 0.0.0-use.local
+  resolution: "@lingui-solid/vite-plugin@workspace:packages/vite-plugin"
+  dependencies:
+    "@lingui-solid/babel-plugin-lingui-macro": "workspace:*"
+    "@lingui/cli": "npm:5.1.2"
+    "@lingui/conf": "npm:5.1.2"
+    "@lingui/core": "npm:5.1.2"
+    "@lingui/format-json": "npm:5.1.2"
+    rimraf: "npm:^6.0.1"
+    unbuild: "npm:2.0.0"
+    vite-plugin-babel-macros: "npm:^1.0.6"
+  peerDependencies:
+    vite: ^3 || ^4 || ^5.0.9 || ^6
   languageName: unknown
   linkType: soft
 
@@ -3234,24 +3256,6 @@ __metadata:
   checksum: 10/85a467b27ae578ebd767e7a50c54ee0ab08a9d472cb84924dce2222ceee08dbd8cde6de177ca56624f537ee901cbaaa39c2380877928e5190ccb0ea2ad055b4d
   languageName: node
   linkType: hard
-
-"@lingui/vite-plugin@workspace:packages/vite-plugin":
-  version: 0.0.0-use.local
-  resolution: "@lingui/vite-plugin@workspace:packages/vite-plugin"
-  dependencies:
-    "@lingui-solid/babel-plugin-lingui-macro": "workspace:*"
-    "@lingui/cli": "npm:5.1.2"
-    "@lingui/conf": "npm:5.1.2"
-    "@lingui/core": "npm:5.1.2"
-    "@lingui/format-json": "npm:5.1.2"
-    rimraf: "npm:^6.0.1"
-    unbuild: "npm:2.0.0"
-    vite: "npm:6.0.2"
-    vite-plugin-babel-macros: "npm:^1.0.6"
-  peerDependencies:
-    vite: ^3 || ^4 || ^5.0.9 || ^6
-  languageName: unknown
-  linkType: soft
 
 "@messageformat/parser@npm:^5.0.0":
   version: 5.0.0
@@ -4563,6 +4567,13 @@ __metadata:
   dependencies:
     "@babel/types": "npm:^7.3.0"
   checksum: 10/efa35b698a328e0faf3d833598a388e592e9dcf2b069857aae6f3f96fada56df8fc5f20fa1b81f8e5c239112e7c3c5867608daad7eebeb895c43844f005cbc06
+  languageName: node
+  linkType: hard
+
+"@types/convert-source-map@npm:^2":
+  version: 2.0.3
+  resolution: "@types/convert-source-map@npm:2.0.3"
+  checksum: 10/411cf9a02cf5dbe204e325dd5ebf50de00b58b38d1d2a3064c6ea28417c23bae956206eaa9ed3a75a994909b4ab3f9c6389073d0636a62500fa6d6333c64d45a
   languageName: node
   linkType: hard
 
@@ -6569,17 +6580,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"convert-source-map@npm:2.0.0, convert-source-map@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "convert-source-map@npm:2.0.0"
+  checksum: 10/c987be3ec061348cdb3c2bfb924bec86dea1eacad10550a85ca23edb0fe3556c3a61c7399114f3331ccb3499d7fd0285ab24566e5745929412983494c3926e15
+  languageName: node
+  linkType: hard
+
 "convert-source-map@npm:^1.6.0":
   version: 1.9.0
   resolution: "convert-source-map@npm:1.9.0"
   checksum: 10/dc55a1f28ddd0e9485ef13565f8f756b342f9a46c4ae18b843fe3c30c675d058d6a4823eff86d472f187b176f0adf51ea7b69ea38be34be4a63cbbf91b0593c8
-  languageName: node
-  linkType: hard
-
-"convert-source-map@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "convert-source-map@npm:2.0.0"
-  checksum: 10/c987be3ec061348cdb3c2bfb924bec86dea1eacad10550a85ca23edb0fe3556c3a61c7399114f3331ccb3499d7fd0285ab24566e5745929412983494c3926e15
   languageName: node
   linkType: hard
 
@@ -14692,19 +14703,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.6.0, source-map@npm:^0.6.1, source-map@npm:~0.6.1":
-  version: 0.6.1
-  resolution: "source-map@npm:0.6.1"
-  checksum: 10/59ef7462f1c29d502b3057e822cdbdae0b0e565302c4dd1a95e11e793d8d9d62006cdc10e0fd99163ca33ff2071360cf50ee13f90440806e7ed57d81cba2f7ff
-  languageName: node
-  linkType: hard
-
-"source-map@npm:^0.8.0-beta.0":
+"source-map@npm:0.8.0-beta.0, source-map@npm:^0.8.0-beta.0":
   version: 0.8.0-beta.0
   resolution: "source-map@npm:0.8.0-beta.0"
   dependencies:
     whatwg-url: "npm:^7.0.0"
   checksum: 10/c02e22ab9f8b8e38655ba1e9abae9fe1f8ba216cbbea922718d5e2ea45821606a74f10edec1db9055e7f7cfd1e6a62e5eade67ec30c017a02f4c8e990accbc1c
+  languageName: node
+  linkType: hard
+
+"source-map@npm:^0.6.0, source-map@npm:^0.6.1, source-map@npm:~0.6.1":
+  version: 0.6.1
+  resolution: "source-map@npm:0.6.1"
+  checksum: 10/59ef7462f1c29d502b3057e822cdbdae0b0e565302c4dd1a95e11e793d8d9d62006cdc10e0fd99163ca33ff2071360cf50ee13f90440806e7ed57d81cba2f7ff
   languageName: node
   linkType: hard
 
@@ -16041,58 +16052,6 @@ __metadata:
     "@testing-library/jest-dom":
       optional: true
   checksum: 10/bf7aed5160097fc231d402faa9ef9a8776ce6c9a1ec02ea0b69a1b658d086753da5dfe211bd3bb103dcd4138665422edc84d18ac2daddfb2e29c3021d662552f
-  languageName: node
-  linkType: hard
-
-"vite@npm:6.0.2":
-  version: 6.0.2
-  resolution: "vite@npm:6.0.2"
-  dependencies:
-    esbuild: "npm:^0.24.0"
-    fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.49"
-    rollup: "npm:^4.23.0"
-  peerDependencies:
-    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
-    jiti: ">=1.21.0"
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    sass-embedded: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.16.0
-    tsx: ^4.8.1
-    yaml: ^2.4.2
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    jiti:
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    sass-embedded:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-    tsx:
-      optional: true
-    yaml:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 10/24fea725676da1812ec0f073d1748a09f6fd8552a86b9b2b3002326d8cb8ada72e0abfe0837b00077412dc5bbd1773aec38d1fc3462709b0ecc1512332b5d2a0
   languageName: node
   linkType: hard
 

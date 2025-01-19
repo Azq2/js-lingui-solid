@@ -1,5 +1,5 @@
 {
-  "name": "@lingui/vite-plugin",
+  "name": "@lingui-solid/vite-plugin",
   "version": "5.1.2",
   "description": "Vite plugin for Lingui message catalogs",
   "main": "./dist/index.cjs",
@@ -52,7 +52,6 @@
     "@lingui/format-json": "5.1.2",
     "rimraf": "^6.0.1",
     "unbuild": "2.0.0",
-    "vite": "6.0.2",
     "vite-plugin-babel-macros": "^1.0.6"
   }
 }
