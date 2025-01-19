@@ -63,7 +63,7 @@
     "macro/index.js"
   ],
   "peerDependencies": {
-    "@lingui-solid/babel-plugin-lingui-macro": "5.0.0",
+    "@lingui-solid/babel-plugin-lingui-macro": "^5.1.2",
     "babel-plugin-macros": "2 || 3",
     "solid-js": "^1.6.0"
   },
@@ -77,7 +77,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.20.13",
-    "@lingui-solid/solid": "5.0.0"
+    "@lingui-solid/solid": "*"
   },
   "devDependencies": {
     "@lingui/core": "^5.1.2",

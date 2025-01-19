@@ -3035,12 +3035,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lingui-solid/solid@npm:5.0.0, @lingui-solid/solid@workspace:packages/solid":
+"@lingui-solid/solid@npm:*, @lingui-solid/solid@workspace:packages/solid":
   version: 0.0.0-use.local
   resolution: "@lingui-solid/solid@workspace:packages/solid"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
-    "@lingui-solid/solid": "npm:5.0.0"
+    "@lingui-solid/solid": "npm:*"
     "@lingui/core": "npm:^5.1.2"
     "@lingui/jest-mocks": "npm:*"
     "@lingui/message-utils": "npm:^5.1.2"
@@ -3055,7 +3055,7 @@ __metadata:
     vite-plugin-dts: "npm:^4.3.0"
     vite-plugin-solid: "npm:^2.11.0"
   peerDependencies:
-    "@lingui-solid/babel-plugin-lingui-macro": 5.0.0
+    "@lingui-solid/babel-plugin-lingui-macro": ^5.1.2
     babel-plugin-macros: 2 || 3
     solid-js: ^1.6.0
   peerDependenciesMeta:
