@@ -17,17 +17,17 @@ More details in PR: https://github.com/lingui/js-lingui/pull/2101
 ```sh
 npm install @lingui-solid/solid
 npm install --save-dev vite-plugin-babel-macros
-npm install --save-dev @lingui/cli@5.1.2 @lingui/conf@5.1.2 @lingui/core@5.1.2 @lingui/macro@5.1.2
+npm install --save-dev @lingui/cli@5 @lingui/conf@5 @lingui/core@5 @lingui/macro@5
 npm install --save-dev @lingui-solid/vite-plugin @lingui-solid/babel-plugin-lingui-macro @lingui-solid/babel-plugin-extract-messages
 
 yarn add @lingui-solid/solid
 yarn add -D vite-plugin-babel-macros
-yarn add -D @lingui/cli@5.1.2 @lingui/conf@5.1.2 @lingui/core@5.1.2 @lingui/macro@5.1.2
+yarn add -D @lingui/cli@5 @lingui/conf@5 @lingui/core@5 @lingui/macro@5
 yarn add -D @lingui-solid/vite-plugin @lingui-solid/babel-plugin-lingui-macro @lingui-solid/babel-plugin-extract-messages
 
 pnpm add @lingui-solid/solid
 pnpm add -D vite-plugin-babel-macros
-pnpm add -D @lingui/cli@5.1.2 @lingui/conf@5.1.2 @lingui/core@5.1.2 @lingui/macro@5.1.2
+pnpm add -D @lingui/cli@5 @lingui/conf@5 @lingui/core@5 @lingui/macro@5
 pnpm add -D @lingui-solid/vite-plugin @lingui-solid/babel-plugin-lingui-macro @lingui-solid/babel-plugin-extract-messages
 ```
 

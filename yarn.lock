@@ -3018,10 +3018,10 @@ __metadata:
     "@babel/runtime": "npm:^7.20.13"
     "@babel/traverse": "npm:^7.20.12"
     "@babel/types": "npm:^7.20.7"
-    "@lingui/conf": "npm:5.1.2"
-    "@lingui/core": "npm:5.1.2"
+    "@lingui/conf": "npm:^5.1.2"
+    "@lingui/core": "npm:^5.1.2"
     "@lingui/macro": "npm:^5.1.2"
-    "@lingui/message-utils": "npm:5.1.2"
+    "@lingui/message-utils": "npm:^5.1.2"
     "@lingui/react": "npm:^5.1.2"
     "@types/babel-plugin-macros": "npm:^2.8.5"
     prettier: "npm:2.8.3"
@@ -3228,7 +3228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lingui/message-utils@npm:5.1.2, @lingui/message-utils@npm:^5.1.2":
+"@lingui/message-utils@npm:^5.1.2":
   version: 5.1.2
   resolution: "@lingui/message-utils@npm:5.1.2"
   dependencies:

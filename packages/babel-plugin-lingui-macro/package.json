@@ -84,9 +84,9 @@
     "@babel/core": "^7.20.12",
     "@babel/runtime": "^7.20.13",
     "@babel/types": "^7.20.7",
-    "@lingui/conf": "5.1.2",
-    "@lingui/core": "5.1.2",
-    "@lingui/message-utils": "5.1.2"
+    "@lingui/conf": "^5.1.2",
+    "@lingui/core": "^5.1.2",
+    "@lingui/message-utils": "^5.1.2"
   },
   "peerDependencies": {
     "babel-plugin-macros": "2 || 3"
