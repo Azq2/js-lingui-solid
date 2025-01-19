@@ -2,7 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/@lingui-solid/babel-plugin-lingui-macro?label=@lingui-solid/babel-plugin-lingui-macro)](https://www.npmjs.com/package/@lingui-solid/babel-plugin-lingui-macro)
 
-[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/babel-plugin-lingui-extract-messages?label=@lingui-solid/babel-plugin-lingui-extract-messages)](https://www.npmjs.com/package/@lingui-solid/babel-plugin-lingui-extract-messages)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/babel-plugin-extract-messages?label=@lingui-solid/babel-plugin-extract-messages)](https://www.npmjs.com/package/@lingui-solid/babel-plugin-extract-messages)
 
 [![NPM Version](https://img.shields.io/npm/v/@lingui-solid/vite-plugin?label=@lingui-solid/vite-plugin)](https://www.npmjs.com/package/@lingui-solid/vite-plugin)
 
@@ -34,7 +34,7 @@ pnpm add -D @lingui-solid/vite-plugin @lingui-solid/babel-plugin-lingui-macro @l
 2. Modify `lingui.config.ts`
 ```ts
 import { LinguiConfig } from '@lingui/conf';
-import extractor from '@lingui-solid/babel-plugin-lingui-extract-messages/extractor';
+import extractor from '@lingui-solid/babel-plugin-extract-messages/extractor';
 
 const config: LinguiConfig = {
   // .....
