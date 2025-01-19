@@ -8,9 +8,9 @@
 
 # Summary
 
-This is fork of the [@lingui/react](https://www.npmjs.com/package/@lingui/react) with SolidJS support.
+This is fork of the [LinguiJS](https://lingui.dev/) with SolidJS support.
 
-More details: https://github.com/lingui/js-lingui/pull/2101
+More details in PR: https://github.com/lingui/js-lingui/pull/2101
 
 # Install
 1. Install required packages
