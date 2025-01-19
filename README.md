@@ -1,10 +1,10 @@
 [![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid?label=@lingui-solid/solid)](https://www.npmjs.com/package/@lingui-solid/solid)
 
-[![NPM Version](https://img.shields.io/npm/v/@@lingui-solid/solid/babel-plugin-lingui-macro?label=@@lingui-solid/solid/babel-plugin-lingui-macro)](https://www.npmjs.com/package/@@lingui-solid/solid/babel-plugin-lingui-macro)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid/babel-plugin-lingui-macro?label=@lingui-solid/solid/babel-plugin-lingui-macro)](https://www.npmjs.com/package/@lingui-solid/solid/babel-plugin-lingui-macro)
 
-[![NPM Version](https://img.shields.io/npm/v/@@lingui-solid/solid/babel-plugin-lingui-extract-messages?label=@@lingui-solid/solid/babel-plugin-lingui-extract-messages)](https://www.npmjs.com/package/@@lingui-solid/solid/babel-plugin-lingui-extract-messages)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid/babel-plugin-lingui-extract-messages?label=@lingui-solid/solid/babel-plugin-lingui-extract-messages)](https://www.npmjs.com/package/@lingui-solid/solid/babel-plugin-lingui-extract-messages)
 
-[![NPM Version](https://img.shields.io/npm/v/@@lingui-solid/solid/vite-plugin?label=@@lingui-solid/solid/vite-plugin)](https://www.npmjs.com/package/@@lingui-solid/solid/vite-plugin)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid/vite-plugin?label=@lingui-solid/solid/vite-plugin)](https://www.npmjs.com/package/@lingui-solid/solid/vite-plugin)
 
 # Summary
 
@@ -14,7 +14,7 @@ More details: https://github.com/lingui/js-lingui/pull/2101
 
 # Install
 1. Install required packages
-```
+```sh
 npm install @lingui-solid/solid
 npm install --save-dev vite-plugin-babel-macros
 npm install --save-dev @lingui/cli@5.1.2 @lingui/conf@5.1.2 @lingui/core@5.1.2 @lingui/macro@5.1.2
@@ -57,8 +57,8 @@ import { lingui as linguiSolidPlugin } from '@lingui-solid/vite-plugin';
 export default defineConfig({
   // .....
   plugins: [
-	babelMacrosPlugin(), // this is required
-	linguiSolidPlugin(), // this is required
+    babelMacrosPlugin(), // this is required
+    linguiSolidPlugin(), // this is required
     solidPlugin(),
     // ....
    ],

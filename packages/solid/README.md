@@ -6,28 +6,16 @@
 
 > SolidJS components for internationalization
 
-`@lingui-solid/solid` is part of [LinguiJS][linguijs]. See the [documentation][documentation] for all information, tutorials and examples.
+This is fork of the [LinguiJS](https://lingui.dev/) with SolidJS support.
 
-## Installation
-
-```sh
-npm install --save @lingui-solid/solid
-# yarn add @lingui-solid/solid
-```
-
-## Usage
-
-See the [tutorial][tutorial] or [reference][reference] documentation.
+See [documentation](https://github.com/Azq2/js-lingui-solid/blob/main/README.md) for usage and installation.
 
 ## License
 
 [MIT][license]
 
-[license]: https://github.com/lingui/js-lingui/blob/main/LICENSE
-[linguijs]: https://github.com/lingui/js-lingui
-[documentation]: https://lingui.dev
-[tutorial]: https://lingui.dev/tutorials/solid
-[reference]: https://lingui.dev/ref/solid
+[license]: https://github.com/Azq2/js-lingui-solid/blob/main/LICENSE
+
 [package]: https://www.npmjs.com/package/@lingui-solid/solid
 [badge-downloads]: https://img.shields.io/npm/dw/@lingui-solid/solid.svg
 [badge-version]: https://img.shields.io/npm/v/@lingui-solid/solid.svg

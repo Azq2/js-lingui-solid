@@ -2,38 +2,20 @@
 [![Version][badge-version]][package]
 [![Downloads][badge-downloads]][package]
 
-# @lingui-solid/babel-plugin-lingui-macro
+# @lingui-solid/solid
 
-> Babel plugin that does actual transforms of Lingui's Macros
+> SolidJS components for internationalization
 
-`@lingui-solid/babel-plugin-lingui-macro` is part of [LinguiJS][linguijs]. See the [documentation][documentation] for all information, tutorials and examples.
+This is fork of the [LinguiJS](https://lingui.dev/) with SolidJS support.
 
-## Installation
-
-```sh
-npm install --save-dev @lingui-solid/babel-plugin-lingui-macro
-# yarn add --dev @lingui-solid/babel-plugin-lingui-macro
-```
-
-## Usage
-
-### Via `.babelrc`
-
-**.babelrc**
-
-```json
-{
-  "plugins": ["@lingui-solid/babel-plugin-lingui-macro"]
-}
-```
+See [documentation](https://github.com/Azq2/js-lingui-solid/blob/main/README.md) for usage and installation.
 
 ## License
 
 [MIT][license]
 
-[license]: https://github.com/lingui/js-lingui/blob/main/LICENSE
-[linguijs]: https://github.com/lingui/js-lingui
-[documentation]: https://lingui.dev
+[license]: https://github.com/Azq2/js-lingui-solid/blob/main/LICENSE
+
 [package]: https://www.npmjs.com/package/@lingui-solid/babel-plugin-lingui-macro
 [badge-downloads]: https://img.shields.io/npm/dw/@lingui-solid/babel-plugin-lingui-macro.svg
 [badge-version]: https://img.shields.io/npm/v/@lingui-solid/babel-plugin-lingui-macro.svg
