@@ -1,10 +1,10 @@
 [![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid?label=@lingui-solid/solid)](https://www.npmjs.com/package/@lingui-solid/solid)
 
-[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid/babel-plugin-lingui-macro?label=@lingui-solid/solid/babel-plugin-lingui-macro)](https://www.npmjs.com/package/@lingui-solid/solid/babel-plugin-lingui-macro)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/babel-plugin-lingui-macro?label=@lingui-solid/babel-plugin-lingui-macro)](https://www.npmjs.com/package/@lingui-solid/babel-plugin-lingui-macro)
 
-[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid/babel-plugin-lingui-extract-messages?label=@lingui-solid/solid/babel-plugin-lingui-extract-messages)](https://www.npmjs.com/package/@lingui-solid/solid/babel-plugin-lingui-extract-messages)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/babel-plugin-lingui-extract-messages?label=@lingui-solid/babel-plugin-lingui-extract-messages)](https://www.npmjs.com/package/@lingui-solid/babel-plugin-lingui-extract-messages)
 
-[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/solid/vite-plugin?label=@lingui-solid/solid/vite-plugin)](https://www.npmjs.com/package/@lingui-solid/solid/vite-plugin)
+[![NPM Version](https://img.shields.io/npm/v/@lingui-solid/vite-plugin?label=@lingui-solid/vite-plugin)](https://www.npmjs.com/package/@lingui-solid/vite-plugin)
 
 # Summary
 
