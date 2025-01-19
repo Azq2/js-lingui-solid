@@ -1,0 +1,14 @@
+**/.next/*
+**/dist/*
+**/test/fixtures/**
+**/test/**/actual.js
+**/test/**/actual/**
+**/test/**/expected.js
+**/locale/*
+**/fixtures/*
+**/expected/*
+coverage/
+website/
+.github
+examples
+/.nx/workspace-data

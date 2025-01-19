@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "jsx": "react",
+    "noEmit": true,
+    "baseUrl": "./",
+    "pretty": true,
+    "esModuleInterop": true,
+    "stripInternal": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "es2017",
+    "paths": {
+      "@lingui-solid/babel-plugin-extract-messages": ["./packages/babel-plugin-extract-messages/src"],
+      "@lingui-solid/solid": ["./packages/solid/src"],
+      "@lingui-solid/solid/macro": ["./packages/solid/macro"],
+      "@lingui-solid/babel-plugin-lingui-macro": ["./packages/babel-plugin-lingui-macro/src/index.ts"],
+      "@lingui-solid/babel-plugin-lingui-macro/macro": ["./packages/babel-plugin-lingui-macro/src/macro.ts"]
+    }
+  },
+  "exclude": [
+    "examples/**",
+    "dist",
+    "website",
+    "**/fixtures/**",
+    "**/__typetests__/**",
+    "packages/solid/**"
+  ]
+}

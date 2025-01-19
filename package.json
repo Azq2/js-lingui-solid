@@ -1,0 +1,89 @@
+{
+  "name": "js-lingui-solid-workspaces",
+  "private": true,
+  "version": "5.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:ci": "jest --ci --runInBand",
+    "test:ci:coverage": "yarn test:ci --coverage",
+    "test:e2e": "yarn workspaces foreach -A -p run test:e2e",
+    "test:tsd": "jest -c jest.config.types.js",
+    "test:all": "yarn test && yarn test:e2e && yarn test:tsd",
+    "lint:types": "tsc",
+    "lint:eslint": "eslint ./packages",
+    "lint:all": "yarn lint:eslint && yarn lint:types",
+    "prettier": "prettier --write '**/*.{ts,tsx,js,jsx}'",
+    "prettier:check": "prettier --check '**/*.{ts,tsx,js,jsx}'",
+    "verdaccio:release": "node -r @swc-node/register ./scripts/verdaccio-release.ts",
+    "release:build": "yarn workspaces foreach --topological-dev -A -v run build",
+    "release:test": "yarn release:build && yarn test:all",
+    "version": "yarn install --no-immutable && git stage yarn.lock",
+    "version:next": "lerna version --exact --force-publish --no-private --preid next --create-release github --conventional-commits --conventional-prerelease --yes",
+    "version:latest": "lerna version --exact --force-publish --no-private --create-release github --conventional-commits --yes",
+    "release:latest": "lerna publish from-package --dist-tag latest --yes",
+    "release:next": "lerna publish from-package --canary --preid next --pre-dist-tag next --yes",
+    "build:docs": "cd website && yarn install && yarn build",
+    "size-limit": "size-limit",
+    "stub:all": "yarn workspaces foreach -A -p run stub",
+    "build": "yarn workspaces foreach -A -p run build",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@eslint/js": "^9.17.0",
+    "@size-limit/preset-small-lib": "^11.1.6",
+    "@swc/core": "^1.3.26",
+    "@tsd/typescript": "^4.9.5",
+    "@types/jest": "^29.4.0",
+    "@types/mock-fs": "^4.13.1",
+    "@types/node": "20.14.8",
+    "babel-jest": "^29.7.0",
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.2",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-node-single-context": "^29.4.0",
+    "jest-runner-tsd": "^4.0.0",
+    "lerna": "^8.1.9",
+    "lint-staged": "^13.1.0",
+    "memory-fs": "^0.5.0",
+    "minimist": "^1.2.5",
+    "mock-fs": "^5.2.0",
+    "npm-cli-login": "^0.1.1",
+    "ora": "^5.1.0",
+    "prettier": "2.8.3",
+    "rimraf": "^3.0.2",
+    "semver": "^7.3.2",
+    "size-limit": "^11.1.6",
+    "strip-ansi": "^6.0.1",
+    "swc-node": "^1.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1"
+  },
+  "workspaces": [
+    "packages/*",
+    "test/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azq2/js-lingui-solid.git"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write --ignore-unknown",
+      "eslint --fix"
+    ]
+  },
+  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
+}
