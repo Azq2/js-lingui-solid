@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lingui/js-lingui.git"
+    "url": "https://github.com/Azq2/js-lingui-solid.git"
   },
   "bugs": {
-    "url": "https://github.com/lingui/js-lingui/issues"
+    "url": "https://github.com/Azq2/js-lingui-solid/issues"
   },
   "engines": {
     "node": ">=20.0.0"
