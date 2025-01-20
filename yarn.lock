@@ -3041,7 +3041,6 @@ __metadata:
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     "@lingui-solid/solid": "npm:*"
-    "@lingui/core": "npm:^5.1.2"
     "@lingui/jest-mocks": "npm:*"
     "@lingui/message-utils": "npm:^5.1.2"
     "@rollup/plugin-babel": "npm:^6.0.4"
@@ -3056,6 +3055,7 @@ __metadata:
     vite-plugin-solid: "npm:^2.11.0"
   peerDependencies:
     "@lingui-solid/babel-plugin-lingui-macro": ^5.1.2
+    "@lingui/core": ^5.1.2
     babel-plugin-macros: 2 || 3
     solid-js: ^1.6.0
   peerDependenciesMeta:
